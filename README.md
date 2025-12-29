@@ -138,10 +138,5 @@ If you run into issues or have questions, open an issue in the repository or rea
 
 ---
 
-## 📄 License
+### Thanks for coming...
 
-Add license information here (e.g., MIT). If unsure, consult the upstream project owner.
-
----
-
-*Generated README — adapt any sections (particularly environment/API info) to match your local workflow.*
