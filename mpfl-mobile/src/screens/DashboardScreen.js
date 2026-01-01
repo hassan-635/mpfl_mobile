@@ -42,9 +42,13 @@ const DashboardScreen = ({ navigation }) => {
   );
 
   const handleLogout = async () => {
-    await AsyncStorage.removeItem('token');
-    navigation.replace('Login');
-  };
+  await AsyncStorage.removeItem('userToken');
+  await AsyncStorage.removeItem('userName');
+  navigation.reset({
+    index: 0,
+    routes: [{ name: 'Login' }], // 'Login' aapki login screen ka naam hona chahiye navigation mein
+  });
+};
 
   // LOGIC: Filter projects to show only those NOT completed in the main list
   const activeProjects = projects.filter(item => item.status !== 'completed');
